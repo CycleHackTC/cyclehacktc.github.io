@@ -4,20 +4,25 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <section class="block description-block">
+    <div class="wrapper">
+      <p>In June, 2015 Cyclehack Twin Cities will bring the Cyclehack Global Movement to Minneapolis for a two-day community event.</p>
+    </div>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section class="block spon-block">
+    <div class="wrapper">
+      <h2>Sponsors</h2>
+      <p>We are currently looking for sponsors.  Please contact us at: <a href="mailto:cyclehacktc@zzolo.org" target="_blank:">cyclehacktc@zzolo.org</a></p>
+    </div>
+  </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!--
+  <section class="block ride-block">
+    <div class="wrapper">
+      <p>     </p>
+    </div>
+  </section>
+-->
 
 </div>

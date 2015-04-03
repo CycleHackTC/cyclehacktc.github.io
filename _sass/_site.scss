@@ -1,0 +1,156 @@
+/**
+ * Main site styles
+ */
+
+/**
+ * Element styles
+ */
+
+body {
+  color: $default-text-color;
+  background-color: $default-background-color;
+}
+
+a, a:visited {
+  color: $default-text-color;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+}
+
+h2 {
+  font-size: 2em;
+  font-family: "abelregular";
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/**
+ * General styles
+ */
+
+.clearfix {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.icon {
+
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+    path {
+      fill: #565656;
+    }
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+/**
+ * Header styles
+ */
+.site-header {
+  width: 100%;
+  text-align: center;
+  padding: 3em 0;
+
+  .title-block {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 2em;
+
+    .site-title {
+      font-size: 3em;
+      margin: 0;
+      padding: 0;
+      font-family: "bebasregular", sans-serif;
+    }
+
+    .site-subtitle {
+      font-size: 2em;
+      margin: 0;
+      padding-top: 0.5em;
+      font-family: "chunkfiveroman";
+    }
+  }
+
+  .site-logo {
+    display: inline-block;
+    width: 15em;
+    margin: 0 1em 1em 0;
+  }
+}
+
+/**
+ * Footer styles
+ */
+.site-footer {
+  width: 100%;
+  padding-top: 6em;
+  padding-bottom: 150px;
+  margin-bottom: 3em;
+  background: transparent url("../images/banner-1500.png") center bottom repeat-x;
+
+  .icon-block {
+    text-align: center;
+    font-size: 2em;
+
+    a {
+      display: inline-block;
+      margin: 0 1em 1em 0;
+    }
+  }
+}
+
+/**
+ * Main body sections
+ */
+section.block {
+  width: 100%;
+  padding: 3em 0;
+
+  &.description-block {
+    color: $alt-text-color;
+    background-color: $alt-background-color;
+
+    .wrapper p {
+      font-family: "abelregular";
+      font-size: 2em;
+    }
+  }
+
+  &.spon-block {
+     .wrapper {
+       text-align: center;
+     }
+  }
+
+  &.ride-block {
+    background: transparent url("../images/Midtown_Greenway-Minneapolis-2007-susan-lesch.jpg") center center repeat;
+    min-height: 30em;
+
+    .wrapper {
+    }
+  }
+}
