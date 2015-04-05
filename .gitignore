@@ -1,2 +1,6 @@
 _site
 .sass-cache
+
+# For github pages
+!bower_components
+!dist

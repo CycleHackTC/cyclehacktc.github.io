@@ -1,0 +1,23 @@
+{
+  "name": "cyclehacktc.github.io",
+  "version": "0.0.1",
+  "homepage": "cyclehacktc.com",
+  "authors": [
+    "Alan Palazzolo <apalazzolo@minnpost.com>"
+  ],
+  "description": "Site for Cycle Hack Twin Cities",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.2",
+    "parallax.js": "~1.3.2"
+  }
+}

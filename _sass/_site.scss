@@ -39,6 +39,7 @@ h2 {
   font-family: "abelregular";
   padding-top: 0.5em;
   margin-bottom: 0.5em;
+  margin-top: 0;
 }
 
 /**
@@ -76,6 +77,13 @@ h2 {
     width: 100%;
     padding: 0 0.25em;
   }
+}
+
+.line-divider {
+  border-bottom: 1px solid $default-text-color;
+  min-height: 1px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /**
@@ -119,7 +127,7 @@ h2 {
 .site-footer {
   width: 100%;
   padding-top: 6em;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
   margin-bottom: 3em;
   background: transparent url("../images/banner-1500.png") center bottom repeat-x;
 
@@ -138,7 +146,10 @@ h2 {
  * Mailchimp signup
  */
 #mc_embed_signup form {
-  margin-bottom: 2em;
+  margin-bottom: 0em;
+  padding: 2em;
+  background-color: rgba(100, 100, 100, 0.6);
+  border-radius: 2px;
   text-align: center;
   font-size: 1.5em;
   width: 100%;
@@ -182,7 +193,7 @@ h2 {
  */
 section.block {
   width: 100%;
-  padding: 3em 0;
+  padding: 4em 0;
 
   &.description-block {
     color: $alt-text-color;
@@ -200,11 +211,7 @@ section.block {
      }
   }
 
-  &.ride-block {
-    background: transparent url("../images/Midtown_Greenway-Minneapolis-2007-susan-lesch.jpg") center center repeat;
-    min-height: 30em;
-
-    .wrapper {
-    }
+  &.email-block {
+    padding: 6em 0;
   }
 }
