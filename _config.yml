@@ -6,6 +6,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cyclehacktc.com" # the base hostname & protocol for your site
 twitter_username: cyclehacktc
 github_username:  cyclehacktc
+social_image: "/images/logo-circle.png"
 
 # Build settings
 markdown: kramdown
+
+exclude: [vendor, vender]
