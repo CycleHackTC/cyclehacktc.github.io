@@ -206,12 +206,60 @@ section.block {
   }
 
   &.spon-block {
-     .wrapper {
-       text-align: center;
-     }
+    background-color: $alt3-background-color;
+
+    .wrapper {
+      text-align: center;
+
+      .sponsor-list {
+        margin-bottom: 1em;
+        text-align: center;
+
+        .sponsor {
+          width: 25%;
+          padding: 1em;
+          display: inline-block;
+
+          img {
+            display: inline-block;
+          }
+        }
+      }
+    }
   }
 
   &.email-block {
     padding: 6em 0;
+  }
+
+  &.team-block {
+
+    .team-member {
+      width: 25%;
+      float: left;
+      padding: 0 1em 1em 1em;
+
+      @media (max-width: 900px) {
+        width: 50%;
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      .team-image {
+        text-align: center;
+
+        img {
+          max-width: 75%;
+          max-height: 3em;
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }

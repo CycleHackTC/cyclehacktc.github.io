@@ -17,6 +17,6 @@ Set up your environment.
 1. Get the code: `git clone https://github.com/CycleHackTC/cyclehacktc.github.io.git && cd cyclehacktc.github.io`
 1. Install Ruby dependencies: `bundle install`
 
-Run locally with Jekyll.  This will run a local web server at `http://localhost:4000` and should watch for any changes you make to the site and reload Jekyll each time.
+Run locally with Jekyll.  This will run a local web server at `http://localhost:4000` and watches for changes in the site and updates the site accordingly, though, unfortunately this does not include the main config file or SASS files.
 
-    jekyll serve --baseurl ''
+    bundle exec jekyll serve --baseurl ''
