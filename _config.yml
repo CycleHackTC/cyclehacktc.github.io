@@ -7,6 +7,8 @@ url: "http://cyclehacktc.com" # the base hostname & protocol for your site
 twitter_username: cyclehacktc
 github_username:  cyclehacktc
 social_image: "/images/logo-circle.png"
+timezone: "America/Chicago"
+locale: en_us
 
 # Build settings
 markdown: kramdown
