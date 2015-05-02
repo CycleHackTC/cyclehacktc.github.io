@@ -71,12 +71,17 @@ h2 {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 60em;
+  max-width: $foundation-large-point;
 
-  @media (max-width: 60em) {
+  @media (max-width: $foundation-large-point) {
     width: 100%;
-    padding: 0 0.25em;
+    padding: 0 0.5em;
   }
+}
+
+.mini-wrapper {
+  margin: 0 auto;
+  max-width: 30em;
 }
 
 .line-divider {
@@ -92,7 +97,13 @@ h2 {
 .site-header {
   width: 100%;
   text-align: center;
-  padding: 3em 0;
+  padding: 3em 0 6em 0;
+
+  @media only screen and (max-width: $foundation-large-point) {
+    & {
+      padding-bottom: 3em;
+    }
+  }
 
   .title-block {
     display: inline-block;
@@ -147,43 +158,46 @@ h2 {
  */
 #mc_embed_signup form {
   margin-bottom: 0em;
-  padding: 2em;
+  padding: 2em 2em 1em 2em;
   background-color: rgba(100, 100, 100, 0.6);
   border-radius: 2px;
-  text-align: center;
-  font-size: 1.5em;
-  width: 100%;
   font-family: "chunkfiveroman";
+  font-size: 1.5em;
 
-  label {
-    display: none;
-  }
-
-  div, input {
-    display: inline-block;
+  @media only screen and (max-width: $foundation-medium-point) {
+    & {
+      padding: 2em 1em 1em 1em;
+    }
   }
 
   input {
-    padding: 0.25em 0.5em;
-    margin: 0 0 0.5em 0;
-    vertical-align: middle;
-    width: auto;
-    border-radius: 2px;
-  }
-
-  input#mce-EMAIL {
-    width: 75%;
-    border: 1px solid #BDBDBD;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    font-size: 1em;
   }
 
   input#mc-embedded-subscribe {
-    background-color: $default-background-color;
-    color: $default-text-color;
+    font-size: 0.85em;
+    background-color: $alt-background-color;
+    color: $alt-text-color;
     border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @media only screen and (max-width: $foundation-medium-point) {
+      & {
+        font-size: 0.5em;
+        text-align: left;
+      }
+    }
 
     &:hover {
-      background-color: $alt-background-color;
-      color: $alt-text-color;
+      background-color: $default-background-color;
+      color: $default-text-color;
     }
   }
 }
@@ -202,6 +216,12 @@ section.block {
     .wrapper p {
       font-family: "abelregular";
       font-size: 2em;
+
+      @media only screen and (max-width: $foundation-small-point) {
+        & {
+          padding: 0 0.75em;
+        }
+      }
     }
   }
 
@@ -213,16 +233,24 @@ section.block {
 
       .sponsor-list {
         margin-bottom: 1em;
-        text-align: center;
 
         .sponsor {
-          width: 25%;
           padding: 1em;
-          display: inline-block;
           vertical-align: middle;
+          display: inline-block;
+          max-width: 25%;
+          max-height: 10em;
 
-          img {
-            display: inline-block;
+          @media only screen and (max-width: $foundation-medium-point) {
+            & {
+              max-width: 50%;
+            }
+          }
+
+          @media only screen and (max-width: $foundation-small-point) {
+            & {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -240,31 +268,21 @@ section.block {
       margin-bottom: 1em;
     }
 
+    h4 {
+      font-size: 1em;
+      line-height: 2em;
+      margin: 0;
+      padding: 0;
+    }
+
     .team-member {
-      width: 25%;
-      float: left;
       padding: 0 1em 1em 1em;
+      margin-bottom: 0.5em;
+      text-align: center;
 
-      @media (max-width: 900px) {
-        width: 50%;
-      }
-
-      @media (max-width: 500px) {
-        width: 100%;
-      }
-
-      h4 {
-        text-align: center;
-      }
-
-      .team-image {
-        text-align: center;
-
-        img {
-          max-width: 75%;
-          max-height: 3em;
-          border-radius: 50%;
-        }
+      .team-image img {
+        max-width: 90%;
+        max-height: 10em;
       }
     }
   }

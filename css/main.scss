@@ -49,11 +49,17 @@ $alt-background-color: #151515;
 $alt2-text-color: #FFFFFF;
 $alt2-background-color: #565656;
 $alt3-text-color: #151515;
-$alt3-background-color: #BFBFBF;
+$alt3-background-color: #DFDFDF;
+
+// Foundation stuff
+$foundation-small-point: 40em;
+$foundation-medium-point: 40.063em;
+$foundation-large-point: 64.063em;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "normalize",
-  "site",
-  "syntax-highlighting"
+  // Normailize included with Foundation
+  //"normalize",
+  "syntax-highlighting",
+  "site"
 ;
