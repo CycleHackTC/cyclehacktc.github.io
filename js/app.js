@@ -2,6 +2,9 @@
 
 // When dom is ready
 $(document).ready(function() {
+  // Stellar
+  $(window).stellar();
+
   // Attach fastclick
   FastClick.attach(document.body);
 
