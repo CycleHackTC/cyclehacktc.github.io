@@ -97,11 +97,12 @@ h2 {
 .site-header {
   width: 100%;
   text-align: center;
-  padding: 3em 0 6em 0;
+  padding: 3em 0 10em 0;
+  background: transparent url("../images/banner-1500.png") center bottom repeat-x;
 
   @media only screen and (max-width: $foundation-large-point) {
     & {
-      padding-bottom: 3em;
+      padding-bottom: 10em;
     }
   }
 
@@ -210,12 +211,15 @@ section.block {
   padding: 4em 0;
 
   &.description-block {
-    color: $alt-text-color;
-    background-color: $alt-background-color;
 
     .wrapper p {
       font-family: "abelregular";
       font-size: 2em;
+
+      &.sub-description {
+        font-size: 1.5em;
+        font-family: inherit;
+      }
 
       @media only screen and (max-width: $foundation-small-point) {
         & {
@@ -257,6 +261,41 @@ section.block {
     }
   }
 
+  &.register-block {
+    padding: 3em;
+
+    .wrapper {
+      margin: 3em auto;
+      padding: 3em;
+      text-align: center;
+      background-color: rgba(100, 100, 100, 0.6);
+    }
+
+    p {
+      font-size: 1.5em;
+      color: $alt-text-color;
+      padding: 0 0.5em;
+      margin-bottom: 2em;
+    }
+
+    .register-button {
+      text-transform: uppercase;
+      color: $alt-text-color;
+      background-color: transparent;
+      font-family: "abelregular";
+      border: 5px solid white;
+      border-radius: 3px;
+      color: white;
+      letter-spacing: 3px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
   &.email-block {
     padding: 6em 0;
   }
@@ -283,6 +322,41 @@ section.block {
       .team-image img {
         max-width: 90%;
         max-height: 10em;
+      }
+    }
+  }
+
+  &.location-block {
+    position: relative;
+
+    .map-background {
+      z-index: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .wrapper {
+      z-index: 100;
+      position: relative;
+    }
+
+    .location-wrapper {
+      margin: 3em 0 3em auto;
+      padding: 2em;
+      text-align: left;
+      background-color: rgba(100, 100, 100, 0.85);
+      color: $alt-text-color;
+      width: 33.33333%;
+
+      @media only screen and (max-width: $foundation-small-point) {
+        & {
+          width: 50%;
+        }
       }
     }
   }

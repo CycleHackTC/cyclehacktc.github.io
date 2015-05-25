@@ -1,7 +1,7 @@
 # Site settings
-title: Cyclehack Twin Cities
+title: CycleHack Twin Cities
 email: cyclehacktc@zzolo.org
-description: In June, 2015 Cyclehack Twin Cities will bring the Cyclehack Global Movement to Minneapolis for a two-day community event, June 19th and 20th.
+description: In June, 2015 CycleHack Twin Cities will bring the CycleHack Global Movement to Minneapolis for a two-day community event, June 19th and 20th.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cyclehacktc.com" # the base hostname & protocol for your site
 twitter_username: cyclehacktc

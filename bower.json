@@ -20,6 +20,7 @@
     "jquery": "~1.11.2",
     "parallax.js": "~1.3.2",
     "foundation": "~5.5.2",
-    "foundation-icon-fonts": "*"
+    "foundation-icon-fonts": "*",
+    "leaflet": "~0.7.3"
   }
 }
