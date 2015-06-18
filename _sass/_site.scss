@@ -242,7 +242,7 @@ section.block {
   }
 
   &.spon-block {
-    background-color: $alt3-background-color;
+    //background-color: $alt3-background-color;
 
     .wrapper {
       text-align: center;
@@ -358,11 +358,13 @@ section.block {
     }
 
     .wrapper {
+      pointer-events: none;
       z-index: 100;
       position: relative;
     }
 
     .location-wrapper {
+      pointer-events: none;
       margin: 3em 0 3em auto;
       padding: 2em;
       text-align: left;
