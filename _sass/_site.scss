@@ -232,6 +232,13 @@ section.block {
         }
       }
     }
+
+    ul {
+      font-size: 1.25em;
+      margin-left: 3em;
+      margin-bottom: 1.5em;
+      list-style-type: square;
+    }
   }
 
   &.spon-block {
